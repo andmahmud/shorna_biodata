@@ -1,0 +1,338 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Biographical Data - Shorna Akter</title>
+    <style>
+        @page {
+            size: A4;
+            margin: 0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            -webkit-print-color-adjust: exact;
+            print-color-adjust: exact;
+        }
+
+        body {
+            font-family: "Segoe UI", "Poppins", Arial, sans-serif;
+            color: #000;
+            background: #fff;
+        }
+
+        .sheet {
+            width: 210mm;
+            min-height: 295mm;
+            margin: 0 auto;
+        }
+
+        .page {
+            padding: 10mm 14mm 6mm;
+        }
+
+        /* ---------- Header ---------- */
+        .hd {
+            text-align: center;
+        }
+
+        .hd h1 {
+            font-size: 18pt;
+            font-weight: 800;
+            letter-spacing: 3px;
+        }
+
+        .hd .sub {
+            font-size: 8.5pt;
+            margin-top: 1.2mm;
+        }
+
+        .hd .contact {
+            font-size: 8.5pt;
+            color: #333;
+            margin-top: 0.8mm;
+        }
+
+        .hr {
+            border: 0;
+            border-top: 1.2pt solid #000;
+            margin: 4mm 0;
+        }
+
+        /* ---------- Sections ---------- */
+        .sec {
+            margin-top: 3.5mm;
+        }
+
+        .sec-title {
+            font-size: 9.5pt;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-bottom: 0.8pt solid #000;
+            padding-bottom: 0.8mm;
+        }
+
+        .rows {
+            margin-top: 1.5mm;
+        }
+
+        .row {
+            display: grid;
+            grid-template-columns: 55mm 1fr;
+            gap: 4mm;
+            padding: 0.7mm 0;
+            border-bottom: 0.4pt dotted #bbb;
+        }
+
+        .row:last-child {
+            border-bottom: 0;
+        }
+
+        .row dt {
+            font-size: 8.5pt;
+            font-weight: 700;
+        }
+
+        .row dd {
+            font-size: 9.5pt;
+        }
+
+        /* ---------- Education ---------- */
+        .edu-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4mm;
+            margin-top: 2mm;
+        }
+
+        .edu-card {
+            border: 0.8pt solid #999;
+            border-radius: 6px;
+            padding: 3mm;
+            break-inside: avoid;
+        }
+
+        .edu-card h3 {
+            font-size: 9.5pt;
+            font-weight: 800;
+        }
+
+        .edu-card .year {
+            display: block;
+            font-size: 8.5pt;
+            font-weight: 700;
+            margin-bottom: 1.2mm;
+        }
+
+        .edu-card .dpt {
+            font-size: 8.5pt;
+            color: #333;
+            margin-bottom: 1.2mm;
+        }
+
+        .edu-line {
+            display: flex;
+            justify-content: space-between;
+            gap: 3mm;
+            padding: 0.6mm 0;
+            font-size: 8.5pt;
+            border-bottom: 0.4pt dotted #ccc;
+        }
+
+        .edu-line:last-child {
+            border-bottom: 0;
+        }
+
+        .edu-line span:first-child {
+            color: #333;
+            font-weight: 600;
+        }
+
+        .edu-line span:last-child {
+            font-weight: 700;
+        }
+
+        /* ---------- Address ---------- */
+        .addr-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4mm;
+            margin-top: 2mm;
+        }
+
+        .addr-card {
+            border: 0.8pt solid #999;
+            border-radius: 6px;
+            padding: 3mm 4mm;
+            break-inside: avoid;
+        }
+
+        .addr-card h3 {
+            font-size: 8.5pt;
+            font-weight: 800;
+            border-bottom: 0.4pt solid #bbb;
+            padding-bottom: 0.8mm;
+            margin-bottom: 1.5mm;
+        }
+
+        .addr-card p {
+            font-size: 9.5pt;
+            line-height: 1.5;
+        }
+
+        /* ---------- Family ---------- */
+        .fam-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4mm;
+            margin-top: 2mm;
+        }
+
+        .fam-card {
+            border: 0.8pt solid #999;
+            border-radius: 6px;
+            padding: 3mm 4mm;
+            break-inside: avoid;
+        }
+
+        .fam-card h3 {
+            font-size: 8.5pt;
+            font-weight: 800;
+            border-bottom: 0.4pt solid #bbb;
+            padding-bottom: 0.8mm;
+            margin-bottom: 1.2mm;
+        }
+
+        .fam-card p {
+            font-size: 9.5pt;
+            margin-bottom: 0.6mm;
+        }
+
+        .fam-card span {
+            font-weight: 700;
+        }
+
+        /* ---------- Footer ---------- */
+        .foot {
+            text-align: center;
+            font-size: 8.5pt;
+            color: #444;
+            margin-top: 4mm;
+            border-top: 0.8pt solid #999;
+            padding-top: 1.6mm;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="sheet">
+        <div class="page">
+
+            <header class="hd">
+                <h1>SHORNA AKTER</h1>
+                <p class="sub">Diploma-in-Engineering &mdash; Computer Science &amp; Technology</p>
+                <p class="contact">+88 01952626552 &nbsp;|&nbsp; shornaakter965@gmail.com &nbsp;|&nbsp; Dhanmondi, Dhaka-1209</p>
+            </header>
+
+            <hr class="hr">
+
+            <section class="sec">
+                <h2 class="sec-title">Personal Information</h2>
+                <dl class="rows">
+                    <div class="row"><dt>Height</dt><dd>5 Feet</dd></div>
+                    <div class="row"><dt>Weight</dt><dd>40 Kg</dd></div>
+                    <div class="row"><dt>Age</dt><dd>22 Years old</dd></div>
+                    <div class="row"><dt>Gender</dt><dd>Female</dd></div>
+                    <div class="row"><dt>Marital Status</dt><dd>Unmarried</dd></div>
+                    <div class="row"><dt>Blood Group</dt><dd>A+ (Positive)</dd></div>
+                    <div class="row"><dt>Religion</dt><dd>Islam</dd></div>
+                    <div class="row"><dt>Nationality</dt><dd>Bangladeshi (By Birth)</dd></div>
+                </dl>
+            </section>
+
+            <section class="sec">
+                <h2 class="sec-title">Educational Qualification</h2>
+
+                <div class="edu-grid">
+
+                    <article class="edu-card">
+                        <h3>Diploma-in-Engineering</h3>
+                        <span class="year">2022 &mdash; 2025</span>
+                        <p class="dpt">Computer Science &amp; Technology</p>
+                        <div class="edu-line"><span>Institute</span><span>Dhaka Mohila Polytechnic Institute</span></div>
+                        <div class="edu-line"><span>Board</span><span>BTEB</span></div>
+                        <div class="edu-line"><span>Result (CGPA)</span><span>3.25 / 4.00</span></div>
+                        <div class="edu-line"><span>Passing Year</span><span>2025</span></div>
+                    </article>
+
+                    <article class="edu-card">
+                        <h3>Secondary School Certificate</h3>
+                        <span class="year">2020 &mdash; 2021</span>
+                        <p class="dpt">Science (S.S.C)</p>
+                        <div class="edu-line"><span>Institute</span><span>Rayer Bazar High School, Dhaka</span></div>
+                        <div class="edu-line"><span>Board</span><span>Dhaka</span></div>
+                        <div class="edu-line"><span>Result (GPA)</span><span>4.83 / 5.00</span></div>
+                        <div class="edu-line"><span>Passing Year</span><span>2021</span></div>
+                    </article>
+
+                </div>
+            </section>
+
+            <section class="sec">
+                <h2 class="sec-title">Address</h2>
+
+                <div class="addr-grid">
+                    <div class="addr-card">
+                        <h3>Present Address</h3>
+                        <p>House: Z-2/2-B Stuff Quarter<br>Road: 15no, Dhanmondi<br>Dhaka-1209</p>
+                    </div>
+                    <div class="addr-card">
+                        <h3>Permanent Address</h3>
+                        <p>Vill- Shripur<br>P.O: Adarsho Sadar<br>P.S: Adarsho Sadar, Dist: Cumilla</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="sec">
+                <h2 class="sec-title">Family Information</h2>
+
+                <div class="fam-grid">
+                    <div class="fam-card">
+                        <h3>Father</h3>
+                        <p>Md Jalil Miah</p>
+                    </div>
+                    <div class="fam-card">
+                        <h3>Mother</h3>
+                        <p>Hazara Begum</p>
+                    </div>
+                    <div class="fam-card">
+                        <h3>Sisters</h3>
+                        <p>Nazma Akter <span>&mdash; Married</span></p>
+                        <p>Lovely Akter <span>&mdash; Married</span></p>
+                        <p>Aklima Akter <span>&mdash; Married</span></p>
+                    </div>
+                    <div class="fam-card">
+                        <h3>Brother</h3>
+                        <p>Al-Amin Hossain <span>&mdash; Unmarried</span></p>
+                    </div>
+                </div>
+            </section>
+
+            <footer class="foot">
+                &copy; 2025 Shorna Akter. All Rights Reserved.
+            </footer>
+
+        </div>
+    </div>
+</body>
+
+</html>
+
+
